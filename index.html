@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> Converse </title>
+         
+         
+         
+          <link rel="shortcut icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQWzdJjPxg3D2hOnH_x_0ew7xykvH2mKrJLAQ&usqp=CAU">
+          
+          <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+          
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+          
+          <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+          
+          <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+          
+          <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+          
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+          
+        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+        
+       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lato:wght@700;900&family=Open+Sans:wght@700&family=Poppins:wght@600;700;800;900&family=Raleway:wght@700&display=swap" rel="stylesheet">
+   
+        <link rel= "stylesheet" href="./css/style.css"> <!--css파일-->
+        <script src="./js/script.js"></script> 
+    </head>
+    
+    
+    
+    <body>
+        <div class="top-bar con row">
+            <div class="logo-box-wrap cell">
+                <div class="logo-box">
+                      <svg id="store-logo" viewBox="0 0 805.4 94">
+      <path d="M724.9 40.6V20.2l-11.6 16.5-19.3-6.3L706.1 47l-11.9 16.5 19.1-6.3 11.6 16.6V53.3l19.5-6.3-19.5-6.4z"></path>
+      <path d="M762.6 0h-36.7l42.8 47-42.8 47h36.7l42.8-47-42.8-47zm-721 27.5c5.8 0 11.5 2.8 15.3 7.5l1.4 1.7 17.9-12.3-1.6-2c-7.9-9.9-20-15.6-33-15.6C18.7 6.8 0 24.7 0 46.6s18.7 39.8 41.6 39.8c12.9 0 24.9-5.6 32.8-15.3l1.6-2-17.9-12.3-1.4 1.7c-3.9 4.7-9.4 7.4-15.2 7.4-10.6 0-19.6-8.8-19.6-19.2.1-10.4 9.1-19.2 19.7-19.2zm192.3 23.9L201.5 9h-20.6v75h20V42l30.2 42h22.8V9h-20v42.4zm77 11c0 .6-.8.7-1.2.7-.3 0-.9-.1-1.2-.8L291.9 9h-23l24.5 75h32.7l24.5-75h-23l-16.7 53.4zm186.2-9c8-4.6 12.6-13 11.9-22.2-.9-12.5-11.8-22.1-24.8-22.1h-38.3v75h20v-27h9c.9 0 1.7.1 2.3.9l12.9 26.1h22.5l-15.5-30.7zM483.6 37H466v-8h17.6c2.4 0 4.4 1.6 4.4 4s-2 4-4.4 4zm124.3 47h60V64h-40v-9h36V37h-36v-8h40V9h-60v75zm-45.2-46.7c-10.7-2.4-13.8-4-13.8-7.5v-.2c0-2.8 2.1-5 7.3-5 6.9 0 12.5 2.2 20 6.7l12-14.2c-8.4-6.7-18.5-10.3-31.6-10.3-18.6 0-29.7 10.4-29.7 24.8v.2c0 15.9 13.1 20.6 29.6 24.3 10.5 2.4 13.4 4.2 13.4 7.4v.2c0 3.3-3.7 5.3-9.5 5.3-9 0-17.8-3.2-25.4-9.3L522.9 74c9.5 8.5 23.3 12.8 37 12.8 18.8 0 32-9.4 32-25.2v-.2c0-14.5-11.4-20.2-29.2-24.1zM124.8 6.9c-22.4 0-40.6 17.9-40.6 39.8 0 22 18.2 39.8 40.6 39.8 22.4 0 40.6-17.9 40.6-39.8 0-22-18.2-39.8-40.6-39.8zm0 58.8c-10.5 0-19-8.5-19-19s8.5-19 19-19 19 8.5 19 19-8.5 19-19 19zM364.9 84h60V64h-40v-9h36V37h-36v-8h40V9h-60v75z"></path>
+    </svg>
+                </div>
+            </div>
+            <div class="top-bar-nav cell">
+                <ul class="row">
+                    <li class="cell"><a href="#">신발</a></li>
+                    <li class="cell"><a href="#">의류</a></li>
+                    <li class="cell"><a href="#">아동</a></li>
+                    <li class="cell"><a href="#">런칭캘린더</a></li>
+                    <li class="cell"><a href="#">스페셜이벤트</a></li>
+                </ul>
+                
+            </div>  
+            <div class="search-box cell-right">
+                <span>검색</span>
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="icon-box cell-right">
+                <ul class="row">
+                    <li class="cell"><a href="#"><i class="far fa-user"></i></a></li>
+                    <li class="cell"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li class="cell"><a href="#"><i class="far fa-heart"></i></a></li>
+                    <li class="cell"><a href="#"><i class="far fa-question-circle"></i></a></li>
+                </ul>
+                
+            </div>
+        </div>
+        
+		<div class="top-bar-2 con row">
+			<div class="left-bar cell">
+				<i class="fas fa-bars"></i>
+			</div>
+			<div class="right-icon cell-right">
+			<div class="icon">
+				<i class="fas fa-shopping-cart"></i>
+				<i class="fas fa-search"></i>
+				</div>
+			</div>
+			<div class="center">
+				<div class="logo-box">
+					 <svg id="store" viewBox="0 0 805.4 94">
+      <path d="M724.9 40.6V20.2l-11.6 16.5-19.3-6.3L706.1 47l-11.9 16.5 19.1-6.3 11.6 16.6V53.3l19.5-6.3-19.5-6.4z"></path>
+      <path d="M762.6 0h-36.7l42.8 47-42.8 47h36.7l42.8-47-42.8-47zm-721 27.5c5.8 0 11.5 2.8 15.3 7.5l1.4 1.7 17.9-12.3-1.6-2c-7.9-9.9-20-15.6-33-15.6C18.7 6.8 0 24.7 0 46.6s18.7 39.8 41.6 39.8c12.9 0 24.9-5.6 32.8-15.3l1.6-2-17.9-12.3-1.4 1.7c-3.9 4.7-9.4 7.4-15.2 7.4-10.6 0-19.6-8.8-19.6-19.2.1-10.4 9.1-19.2 19.7-19.2zm192.3 23.9L201.5 9h-20.6v75h20V42l30.2 42h22.8V9h-20v42.4zm77 11c0 .6-.8.7-1.2.7-.3 0-.9-.1-1.2-.8L291.9 9h-23l24.5 75h32.7l24.5-75h-23l-16.7 53.4zm186.2-9c8-4.6 12.6-13 11.9-22.2-.9-12.5-11.8-22.1-24.8-22.1h-38.3v75h20v-27h9c.9 0 1.7.1 2.3.9l12.9 26.1h22.5l-15.5-30.7zM483.6 37H466v-8h17.6c2.4 0 4.4 1.6 4.4 4s-2 4-4.4 4zm124.3 47h60V64h-40v-9h36V37h-36v-8h40V9h-60v75zm-45.2-46.7c-10.7-2.4-13.8-4-13.8-7.5v-.2c0-2.8 2.1-5 7.3-5 6.9 0 12.5 2.2 20 6.7l12-14.2c-8.4-6.7-18.5-10.3-31.6-10.3-18.6 0-29.7 10.4-29.7 24.8v.2c0 15.9 13.1 20.6 29.6 24.3 10.5 2.4 13.4 4.2 13.4 7.4v.2c0 3.3-3.7 5.3-9.5 5.3-9 0-17.8-3.2-25.4-9.3L522.9 74c9.5 8.5 23.3 12.8 37 12.8 18.8 0 32-9.4 32-25.2v-.2c0-14.5-11.4-20.2-29.2-24.1zM124.8 6.9c-22.4 0-40.6 17.9-40.6 39.8 0 22 18.2 39.8 40.6 39.8 22.4 0 40.6-17.9 40.6-39.8 0-22-18.2-39.8-40.6-39.8zm0 58.8c-10.5 0-19-8.5-19-19s8.5-19 19-19 19 8.5 19 19-8.5 19-19 19zM364.9 84h60V64h-40v-9h36V37h-36v-8h40V9h-60v75z"></path>
+    </svg>
+				</div>
+			</div>
+		</div>
+		
+		<div class="nav-2-depth-wrap">
+			<div class="nav-2-depth con row">
+				<div class="nav-left-wrap cell">
+					<div class="nav-content scroll">
+						<div class="text">
+							<ul>
+								<li><a href="#">전체보기</a></li>
+								<li><a href="#">베스트셀러</a></li>
+								<li><a href="#">척테일러 올스타</a></li>
+								<li><a href="#">척 70</a></li>
+								<li><a href="#">원스타</a></li>
+								<li><a href="#">잭퍼셀</a></li>
+								<li><a href="#">프로레더</a></li>
+								<li><a href="#">회원전용</a></li>
+							</ul>
+						</div>
+						<div class="img-menu">
+							<p>추천상품</p>
+							<ul class="row">
+								<li class="cell"><a href="#"><img src="./img/shoes_1.jpg" alt=""></a><span>빅 사이즈</span></li>
+								<li class="cell"><a href="#"><img src="./img/shoes_2.jpg" alt=""></a><span>농구화 컬렉션</span></li>
+								<li class="cell"><a href="#"><img src="./img/shoes_3.jpg" alt=""></a><span>척 70 블랙 아이스</span></li>
+								<li class="cell"><a href="#"><img src="./img/shoes_4.jpg" alt=""></a><span>리프트 클린 레더</span></li>
+							</ul>
+							
+						</div>
+					</div>
+					<div class="nav-content">
+						<div class="text">
+							<ul>
+								<li><a href="#">전체보기</a></li>
+								<li><a href="#">아우터</a></li>
+								<li><a href="#">상의</a></li>
+								<li><a href="#">하의</a></li>
+								<li><a href="#">용품</a></li>
+								
+							</ul>
+						</div>
+						<div class="img-menu">
+							<p>추천상품</p>
+							<ul class="row">
+								<li class="cell"><a href="#"><img src="./img/outer1.jpg" alt=""></a><span>다운 롱 트렌치</span></li>
+								<li class="cell"><a href="#"><img src="./img/outer2.gif" alt=""></a><span>리버시블 셰르파</span></li>
+								<li class="cell"><a href="#"><img src="./img/outer3.jpg" alt=""></a><span>리뉴 그래픽 크루</span></li>
+								<li class="cell"><a href="#"><img src="./img/outer4.jpg" alt=""></a><span>슈 레이스</span></li>
+							</ul>
+							
+						</div>
+					</div>
+					<div class="nav-content">
+						<div class="text">
+							<ul>
+								<li><a href="#">전체보기</a></li>
+								<li><a href="#">베스트셀러</a></li>
+								<li><a href="#">척테일러 올스타</a></li>
+								
+							</ul>
+						</div>
+						<div class="img-menu">
+							<p>추천상품</p>
+							<ul class="row">
+								<li class="cell"><a href="#"><img src="./img/kids1.jpg" alt=""></a>
+								<span>척테일러 올스타 키즈</span></li>
+								<li class="cell"><a href="#"><img src="./img/kids2.jpg" alt=""></a><span>다이노버스</span></li>
+								<li class="cell"><a href="#"><img src="./img/kids3.gif" alt=""></a><span>2V 툰드라 프린트</span></li>
+								<li class="cell"><a href="#"><img src="./img/kids4.jpg" alt=""></a><span>아트 클래스</span></li>
+							</ul>
+							
+						</div>
+					</div>
+					
+				</div>
+				<div class="nav-right cell-right">
+					<div class="close-btn">
+						 <i class="fas fa-times"></i>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+          
+		<div class="main-image con">
+			<div class="text-box">
+				<p>black friday</p>
+				<p>컨버스 온라인 스토어 회원만을 위한<br>블랙 프라이데이 페스티벌<br><span>11.04(수)-11.10(화)</span></p>
+				<a href="#">구매하기</a>
+				<a href="#">자세히 보기</a>
+			</div>
+		</div>
+      
+		<div class="main-response-btn con">
+			<a href="#">구매하기</a>
+			<a href="#">자세히 보기</a>
+		</div>
+       
+		<div class="shoes-menu con">
+			<div class="text-box">
+				<h1>choose your icon</h1>
+				<a href="#"><i class="fas fa-arrow-right"></i><span>신발 전체 보기</span></a>
+				<div class="shoes">
+					<ul class="row">
+						<li class="cell"><a href="#"><img src="./img/all-star.jpg" alt=""></a><span>척테일러 올스타</span></li>
+						<li class="cell"><a href="#"><img src="./img/chuck-70.jpg" alt=""></a><span>척 70</span></li>
+						<li class="cell"><a href="#"><img src="./img/onestar.jpg" alt=""></a><span>원스타</span></li>
+						<li class="cell"><a href="#"><img src="./img/jack.jpg" alt=""></a><span>잭퍼셀</span></li>
+					</ul>
+					
+				</div>
+				
+				
+			</div>
+			<div class="response-shoes-view">신발 전체 보기</div>		
+		</div>
+		
+		
+     
+			
+       
+		<div class="section-chuck con row">
+			<div class="left-section cell">
+				<p>척테일러 올스타 러기드 윈터</p>
+				<div class="dark">
+					<p>peak style, all season.</p>
+				</div>
+				<p>peak style, all season.</p>
+			</div>
+			<div class="right-section cell-right">
+			<div class="text">
+				<h1>chuck taylor all star<br>lugged winter</h1>
+				<p>하이킹 슈즈 스타일에서 영감받은 셰르파 안감 스니커즈<br>척테일러 올스타 러기드 윈터를 출시합니다.</p>
+				<a href="#">구매하기</a>
+			</div>
+			</div>
+		</div>
+		<div class="respon-btn"><a href="#">구매하기</a></div>
+       
+		<div class="golf con">
+			<div class="text-box">
+				<p>converse x<br>golf wang chuck 70</p>
+				<p>골프왕의 아이코닉 폴카 닷 패턴을 볼드하게 표현해낸<br>'타일러, 더 크리에이터'와의 콜라보레이션 척 70을 출시합니다.</p>
+				<a href="#">2020.11.11 10AM 출시 예정</a>
+			</div>
+		</div>
+        <div class="golf-response con">
+            <a href="#">2020.11.10 10AM 출시 예정</a>
+        </div>
+       
+		<div class="black-ice con">
+			<div class="text">
+				<p>chuck taylor<br>all star cx<br>black ice</p>
+				<p>겨울시즌 새롭게 선보이는 cx.<br>눈에 띄는 컬러의 어퍼에 더해진 혁신적인 편안함을 경험해보세요.</p>
+				<a href="#">구매하기</a>
+				<a href="#">더 알아보기</a>
+			</div>
+		</div>
+       
+        <div class="black-response con">
+			<a href="#">구매하기</a>
+			<a href="#">더 알아보기</a>
+        </div>
+       
+		<div class="storm-boot con row">
+			<div class="storm-left cell">
+				<div class="text-box">
+					<p>chuck taylor<br>storm boot</p>
+					<p>비나 눈이 와도 포근함을 유지하는 방수 고어텍스 부츠.<br>겨울을 더욱 따뜻하게,컨버스와 함께 하세요.</p>
+					<a href="#">구매하기</a>
+				</div>
+				
+			</div>
+			<div class="storm-res">
+				<a href="#">구매하기</a>
+			</div>
+			<div class="storm-right cell">
+				<div class="storm-right-top row">
+					<div class="top-left cell">
+						<div class="img1"></div>
+						<div class="img2"></div>
+						<div class="text">
+							<div class="top">
+								<a href="#"><i class="far fa-heart cell"></i></a>
+								<span>NEW ARRIVAL</span>
+							</div>
+							<div class="price-tag">
+								<p>보시 MC<br><span>149,000원</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="top-right cell-right">
+						<div class="img1"></div>
+						<div class="img2"></div>
+						<div class="text">
+							<div class="top">
+								<a href="#"><i class="far fa-heart cell"></i></a>
+								<span>NEW ARRIVAL</span>
+							</div>
+							<div class="price-tag">
+								<p>보시 MC<br><span>149,000원</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="storm-right-bottom row">
+					<div class="bottom-left cell">
+							<div class="img1"></div>
+						<div class="img2"></div>
+						<div class="text">
+							<div class="top">
+								<a href="#"><i class="far fa-heart cell"></i></a>
+								<span>NEW ARRIVAL</span>
+							</div>
+							<div class="price-tag">
+								<p>척테일러 스톰 부츠<br><span>159,000원</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="bottom-right cell-right">
+							<div class="img1"></div>
+						<div class="img2"></div>
+						<div class="text">
+							<div class="top">
+								<a href="#"><i class="far fa-heart cell"></i></a>
+								<span>NEW ARRIVAL</span>
+							</div>
+							<div class="price-tag">
+								<p>척테일러 스톰 부츠<br><span>159,000원</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+      
+		
+       
+		<div class="G4 con">
+			<div class="g4-text">
+				<h1>converse g4</h1>
+				<p>폭발적인 플레이 스타일을 가진 선수를 위해 설계된<br>퍼포먼스 농구화, G4를 경험해보세요.</p>
+				<a href="#">구매하기</a>
+			</div>
+		</div>
+      
+		<div class="G4-response con">
+			<a href="#">구매하기</a>
+		</div>
+       
+		<div class="outer con row">
+			<div class="outer-left cell">
+				<div class="out-text">
+					<h1>outer collection</h1>
+					<p>스타일과 실용성을 모두 갖춘 이번 시즌 필수 아이템.<br>다가오는 추위에는 컨버스 아우터 컬렉션과 함께하세요.</p>
+					<a href="#">더 알아보기</a>
+				</div>
+			</div>
+			<div class="response-out con">
+				<a href="#">더 알아보기</a>
+			</div>
+			<div class="outer-right cell-right">
+				<div class="top-right row">
+					<div class="left-box cell">
+						<div class="img1"></div>
+						<div class="img2"></div>
+						<div class="text">
+							<div class="top">
+								<a href="#"><i class="far fa-heart cell"></i></a>
+								<span>NEW ARRIVAL</span>
+							</div>
+							<div class="price-tag">
+								<p>다운 롱 트렌치<br><span>259,000원</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="right-box cell-right">
+						<div class="img1"></div>
+						<div class="img2"></div>
+						<div class="text">
+							<div class="top">
+								<a href="#"><i class="far fa-heart cell"></i></a>
+								<span>NEW ARRIVAL</span>
+							</div>
+							<div class="price-tag">
+								<p>다운 롱 트렌치<br><span>259,000원</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="btm-right row">
+					<div class="left-box cell">
+						<div class="img1"></div>
+						<div class="img2"></div>
+						<div class="text">
+							<div class="top">
+								<a href="#"><i class="far fa-heart cell"></i></a>
+								<span>NEW ARRIVAL</span>
+							</div>
+							<div class="price-tag">
+								<p>유틸리티 리버시블 셰르파 재킷<br><span>109,000원</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="right-box cell-right">
+						<div class="img1"></div>
+						<div class="img2"></div>
+						<div class="text">
+							<div class="top">
+								<a href="#"><i class="far fa-heart cell"></i></a>
+								<span>NEW ARRIVAL</span>
+							</div>
+							<div class="price-tag">
+								<p>유틸리티 리버시블 셰르파 재킷<br><span>109,000원</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+       
+		<div class="spacer"></div>
+		
+		<div class="delivery-box">
+			<div class="info-box-wrap con row">
+				<div class="info-box cell">
+					<div class="free-del">
+						 <i class="fas fa-shipping-fast"></i>
+						<p>무료배송</p>
+						<p>5만원 이상 구매 시 <br>무료배송</p>
+					</div>
+				</div>
+				<div class="info-box cell">
+					<div class="recall-box">
+						<i class="fas fa-inbox"></i>
+						<p>교환/반품 서비스</p>
+						<p>사이즈를 잘못 선택하셨나요?<br>교환/반품 서비스에 대해 <br>더 알아보세요.</p>
+						<a href="#"></a>
+					</div>
+				</div>
+				<div class="info-box cell">
+					<div class="membership">
+						<img src="./img/logo.jpg" alt="">
+						<p>회원 전용 혜택</p>
+						<p>신규 가입 축하 쿠폰, 드로우 응모 등<br>지금 회원 가입 하시고<br>더욱 특별한 혜택을 누려보세요.</p>
+						<a href="#">회원 가입 하기</a>
+					</div>
+				</div>
+				<div class="info-box cell">
+					<div class="follow">
+				   <i class="fab fa-facebook-f"></i>
+                   <i class="fab fa-instagram"></i>
+						<p>Follow Us</p>
+						<p>컨버스의 SNS 채널을 통해<br>신상품 정보 및 이벤트 등 새로운 소식을<br> 확인하세요.</p>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+       
+       <div class="fam row">
+		<a class="cell" href="#">family sites</a>
+		   <a class="cell-right" href="#"><i class="fas fa-plus"></i></a>
+		</div>
+       
+        <div class="spacer-2"></div>
+        
+		<div class="bottom row">
+			<div class="info-box cell">
+				<div class="follow-us row">
+					<p>follow us</p>
+					<div class="sns-box cell">
+					<i class="fab fa-facebook-f"></i>
+					</div>
+					<div class="sns-box cell">
+					 <i class="fab fa-instagram"></i>
+					</div>
+				</div>
+			</div>
+			<div class="info-box cell">
+				<div class="support">
+					<p>support</p>
+					<a href="#">고객지원센터</a>
+					<a href="#">1:1 문의</a>
+					<a href="#">주문/배송 조회</a>
+				</div>
+			</div>
+			<div class="info-box cell">
+			<div class="information">
+				<p>information</p>
+				<a href="#">컨버스에 대하여</a>
+				<a href="#">회원가입</a>
+				<a href="#">매장안내</a>
+				<a href="#">공지사항</a>
+			</div>
+			</div>
+			<div class="info-box cell">
+				<div class="policy">
+					<p>policy</p>
+					<p>이용약관</p>
+					<a href="#">개인정보처리방침</a>
+				</div>
+			</div>
+			<div class="info-box cell">
+				<div class="family">
+					<p>family sites</p>
+					<a href="#">NIKE</a>
+					<a href="#">Jordan</a>
+				</div>
+			</div>
+		</div>
+       
+		<div class="converse-korea">
+			<div class="text-box">
+				<h3>(유)컨버스코리아</h3>
+				<p>대표 주형준<br>개인정보책임 주형준<br>사업자등록번호 220-88-74818<br>통신판매업 신고번호:제2016-서울강남-004778호</p>
+				
+				<a href="#">통신판매업자 신원정보 확인</a>
+				
+				<p>주소:서울시 강남구 테헤란로 152 강남파이낸스센터 32F<br>고객상담팀:080-987-0182<br>(상담시간 월-금:AM:09:00 - PM 05:30,주말/공휴일 휴무) <a href="#">conversekorea@converse.co.kr</a>(24시간 접수 가능)</p>
+				
+				<a href="#">개인정보처리방침</a>
+				<span>|</span>
+				<a href="#">이용약관</a>				
+				<p>2020 Converse Korea LLC. All Rights Reserved.</p>
+				
+				 <i class="fab fa-facebook-f"></i>
+                 <i class="fab fa-instagram"></i>
+				
+			</div>
+		</div>
+		<div class="bottom-2">
+			<div class="btm con row">
+				<div class="left cell">
+					<div class="text">
+						<ul class="row">
+							<li class="cell">(유)컨버스코리아</li>
+							<li class="cell">|</li>
+							<li class="cell">대표 주형준</li>
+							<li class="cell">|</li>
+							<li class="cell">개인정보책임 주형준</li>
+							<li class="cell">사업자등록번호 220-88-74818</li>
+						</ul>
+						
+						<ul class="row">
+							<li class="cell">통신판매업 신고번호:제2016-서울강남-00478호</li>
+							<li class="cell">|</li>
+							<li class="cell"><a href="#">통신판매업자 신원정보 확인</a></li>
+							
+						</ul>
+						<p>주소:서울시 강남구 테헤란로 152 강남파이낸스센터32F</p>
+						
+						<ul class="row">
+							<li class="cell">고객상담팀:080-987-0182(상담시간 월-금:AM 09:00 - PM 05:30, 주말/공휴일 휴무)</li>
+							<li class="cell">|</li>
+							<li class="cell"><a href="#">conversekorea@converse.co.kr</a>(24시간 접수 가능)</li>
+						</ul>
+					</div>
+					
+					<div class="llc">
+						<p>2020 Converse Korea LLC. All Rights Reserved.</p>
+					</div>
+				</div>
+				<div class="right cell">
+					<p>소비자피해 보증보험<br>고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 구매<br>안전서비스 소비자피해보증보험 서비스를 이용하실 수 있습니다.<br>보증대상:미배송, 반품/환불거부, 쇼핑몰 부도</p>
+					<a href="#">보증보험 가입사실 확인하기</a>
+				</div>
+			</div>
+		</div>
+		<div class="respon-btm">
+		<img src="./img/korea.jpeg" alt="">
+			<span>KR | 한국어</span>
+		</div>
+		<div class="hover-box">
+		
+			
+			<a href="#"><i class="fas fa-star"></i>아우터 컬렉션 보러가기</a>
+		</div>
+        
+       
+    </body>
+</html>
